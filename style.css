@@ -185,7 +185,98 @@ span {
 
 /* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
 
+@font-face {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/alegreyasans/v24/5aUz9_-1phKLFgshYDvh6Vwt7VdtvXVX.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Dawning of a New Day';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dawningofanewday/v20/t5t_IQMbOp2SEwuncwLRjMfIg1yYit_nAw8cj2M.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v35/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqJ2nOeZ.woff2) format('woff2');
+}
+
+
+
+body {
+  font-family: "Alegreya Sans";
+  color: var(--text);
+}
+
+.logo {
+  font-family: 'Dawning of a New Day';
+}
+
+.pitch {
+  font-family: 'Lora';
+  text-align: center;
+  background-color: var(--background-secondary);
+}
+
+.navlink {
+  color: var(--text);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-secondary);
+
+}
+
+.pricelist {
+  background-color: var(--background-secondary);
+}
+
+.footer {
+  background-color: var(--background-secondary);
+}
+
+.subheading {
+  background-color: var(--background-primary);
+}
+
+.review {
+  background-color: var(--background-primary);
+}
+
+.subheading__content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.obrazek_chaty {
+  background-image: url(./images/arnica-intro.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.offer {
+  max-width: 270px;
+  width: 80%;
+}
+
+.review__text {
+  border: 2px solid var(--background-secondary);
+  font-style: oblique;
+}
+
 @media (min-width: 840px) {
+
   /* HLAVIČKA - NAVIGACE */
   .page-header {
     padding: 2rem 4rem;
@@ -221,4 +312,38 @@ span {
   }
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+
+  .pricelist__content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .offer {
+    max-width: 220px;
+  }
+
+  .review__text {
+    max-width: 250px;
+    background-color: var(--background-secondary);
+    position: relative;
+    right: -60px;
+  }
+
+  .review__photo {
+    background-image: url(./images/reviewer.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+
+
+  }
+
+  .footer {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
+  }
 }
